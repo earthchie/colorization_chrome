@@ -1,0 +1,1 @@
+css.innerHTML = "html * { filter: initial !important; }";
