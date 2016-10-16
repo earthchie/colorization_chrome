@@ -14,7 +14,7 @@
                     title: "คลิกเพื่อเข้าโหมดภาพสี"
                 });
                 chrome.tabs.executeScript(null, {
-                    file: 'off.js'
+                    code: 'css.innerHTML = "body { filter: grayscale(1) !important; }";'
                 });
             }else{
                 chrome.browserAction.setIcon({
@@ -24,7 +24,7 @@
                     title: "คลิกเพื่อเข้าโหมดขาวดำ"
                 });
                 chrome.tabs.executeScript(null, {
-                    file: 'on.js'
+                    code: 'css.innerHTML = "html *,* { filter: initial !important; }";'
                 });
             }
         });

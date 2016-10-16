@@ -5,7 +5,7 @@
         if(grayscale){
             css.innerHTML = "body { filter: grayscale(1) !important; }";
         }else{
-            css.innerHTML = "html * { filter: initial !important; }";
+            css.innerHTML = "html *, * { filter: initial !important; }";
         }
 
     });
